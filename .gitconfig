@@ -1,0 +1,12 @@
+[include]
+  # Valor por default para git; de esta manera, por defecto siempre usaremos nuestra cuenta personal
+  path = /home/abenitez/Documents/Sisteco/Repositorios/Personal/.gitconfig.personal
+
+[includeIf "gitdir:~/Trabajo/"]
+  # Todos los proyectos que descarguemos o creemos a partir de esta ruta, usara tu cuenta de tu trabajo
+  path = /home/abenitez/Documents/Sisteco/Repositorios/.gitconfig.trabajo
+
+[includeIf "gitdir:~/Personal/"]
+  # Todos los proyectos que descarguemos o creemos a partir de esta ruta, usara tu cuenta personal
+  # este bloque es opcional, pero debes de asegurarte de colocar el primer bloque.
+  path = /home/abenitez/Documents/Sisteco/Repositorios/Personal/.gitconfig.personal
